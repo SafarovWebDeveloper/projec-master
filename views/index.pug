@@ -1,0 +1,18 @@
+extends layout 
+block home
+    .row 
+     each db in datas
+      .col-3      
+        .card_product 
+            .card_img 
+                img(src=""+db.photo alt="rasm")
+                span.sale 
+                i.fal.fa-shopping-cart
+                b o
+            .card_text
+                h2= db.title
+                p.price= db.price 
+                .card_bottom 
+                    span= db.like  
+                    span= db.date.toDateString() 
+                    span  sale 
