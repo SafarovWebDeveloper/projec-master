@@ -9,6 +9,10 @@ nav.navbar.navbar-expand-lg.navbar-light
                     a.nav-link.active(aria-current='page' href='/') Home
                 li.nav-item
                     a.nav-link(href='/add') Maxsulot qo'shish
-            form.d-flex
-                input.form-control.me-2.none(type='search' placeholder='Search' aria-label='Search')
-                button.btn.btn-outline-info(type='submit') Search
+            form.d-flex(action="/search")
+                input.form-control.me-2.none(type='search' placeholder='Search' aria-label='Search' name='search')
+                input.btn.btn-outline-info(type="submit", value="Yuborish" name='seach-btn')
+
+
+
+
