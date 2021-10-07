@@ -10,7 +10,7 @@
 }
 
 .container {
-    padding-top: 35px;
+    padding-top: 35px;  
 }
 
 .navbar {
@@ -31,35 +31,33 @@ a.nav-link {
 }
 
 .card_product {
-    border: 3px double rgba(51, 51, 51, 0.322);
+    border: 1px double rgb(133, 133, 133);
     border-radius: 7px;
     width: 300px;
     position: relative;
+    height: 500px;
     padding: 18.75px;
-    box-shadow: 0 0 10px 0 rgba(51, 51, 51, 0.322),
-        inset 0 0 10px 0 rgba(51, 51, 51, 0.322),
-        0 0 8px 0 rgba(51, 51, 51, 0.322);
     transition: all 0.2s linear;
     margin: 10px auto;
 }
 
 .card_product:hover {
-    box-shadow: 0 0 3px 0 rgba(51, 51, 51, 0.322),
-        inset 0 0 5px 0 rgba(51, 51, 51, 0.322);
+    box-shadow:0 0 30px rgba(146, 146, 146, 0.589);
 }
 
 .card_img {
     width: 100%;
     max-width: 100%;
+    margin: 20px 0;
 }
 
 .card_text {
-    border: 2px double rgba(0, 0, 0, 0.425);
-    padding: 4.5px 5px;
-    max-width: 100%;
-    width: 100%;
     border-radius: 7px;
-    margin: 10px auto;
+    padding: 5px 8px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    text-align: left;
 }
 
 .card_img img {
@@ -68,19 +66,25 @@ a.nav-link {
 }
 
 .card_text h2 {
-    color: gray;
+    color: rgb(0, 0, 0);
     margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .card_text .price {
     color: gray;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .card_text .card_bottom {
     width: 100%;
     max-width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    font-weight: 600;
 }
 
 .form-select {
@@ -326,4 +330,42 @@ footer .fab.fa-instagram {
     100% {
         transform: translate(0, -60px);
     }
+}
+.again
+{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.again i
+{
+    margin: 0 0 15px 10px;
+    color: rgb(54, 90, 0);
+}
+.buy button{
+    width: 200px;
+    height: 50px;
+    border:none;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, 1);
+    margin: 20px auto;
+    align-items: center;
+    transition: .4s;
+    color: honeydew;
+}
+.buy button:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.buy 
+{
+    margin: 0 auto;
+    text-align: center;
+}
+.navbar-expand{
+    padding: 0 100px;
 }

@@ -7,12 +7,13 @@ block home
             .card_img 
                 img(src=""+db.photo alt="rasm")
                 span.sale 
-                i.fal.fa-shopping-cart
-                b o
             .card_text
                 h2= db.title
-                p.price= db.price 
-                .card_bottom 
-                    span= db.like  
+                .again
+                    p.price= db.price  
+                    <i class="fas fa-money-bill"></i>
+                .card_bottom
+                    span 50  
                     span= db.date.toDateString() 
-                    span  sale 
+                .buy 
+                    button(type="submit" ) Sotib olish 
